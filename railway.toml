@@ -1,0 +1,12 @@
+[projects.default]
+name = "atavus-report-generator"
+
+[services.api]
+source = "api"
+dockerfilePath = "api/Dockerfile"
+env = ["PUBLIC_BASE_URL", "NEXT_PUBLIC_API_BASE_URL"]
+
+[services.web]
+source = "web"
+dockerfilePath = "web/Dockerfile"
+env = ["PUBLIC_BASE_URL", "NEXT_PUBLIC_API_BASE_URL"]
